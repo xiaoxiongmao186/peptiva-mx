@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>PEPTIVA México | Programa de Bienvenida — Descarga la App Oficial</title>
+<meta name="description" content="Descubre PEPTIVA en México. Conoce nuestro Programa Especial de Bienvenida y consulta tu elegibilidad para una caja de muestra gratuita. Descarga la app oficial."/>
+
+<!-- ============================================================
+     META PIXEL + GA4  —  REEMPLAZA CON TUS IDs ANTES DE PUBLICAR
+     ============================================================ -->
+<script>
+  // TODO: Reemplaza con tu Meta Pixel ID real (ej. '123456789012345')
+  var PIXEL_ID = 'YOUR_PIXEL_ID';
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  if (PIXEL_ID !== 'YOUR_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView'); }
+</script>
+<!-- TODO: Reemplaza G-XXXXXXX con tu ID de medición de GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+
+<style>
+  :root{
+    --bg:#f6f8fa;
+    --white:#ffffff;
+    --ink:#0f172a;
+    --muted:#5b6472;
+    --line:#e7ebf0;
+    --accent:#0d9488;
+    --accent-dark:#0b7d73;
+    --accent-soft:#e6f7f4;
+    --navy:#0f172a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* announcement bar */
+  .announce{
+    background:var(--navy);
+    color:#fff;
+    text-align:center;
+    font-size:13.5px;
+    padding:9px 14px;
+  }
+  .announce b{color:#5eead4}
+
+  header{border-bottom:1px solid var(--line);background:var(--white)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;letter-spacing:.04em;font-size:18px}
+  .brand .dot{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),#34d399);display:grid;place-items:center;color:#fff;font-size:14px;font-weight:900}
+  .brand small{display:block;font-size:10px;letter-spacing:.26em;color:var(--muted);font-weight:700}
+  .nav-cta{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;font-weight:800;font-size:14px}
+
+  /* hero */
+  .hero{padding:52px 0 36px;text-align:center;background:linear-gradient(180deg,#ffffff,#f2fbf9)}
+  .eyebrow{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:14px}
+  .hero h1{font-size:clamp(30px,6vw,50px);line-height:1.08;letter-spacing:-.02em;max-width:760px;margin:0 auto 16px}
+  .hero p.sub{color:var(--muted);font-size:clamp(16px,2.6vw,19px);max-width:640px;margin:0 auto 28px}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;border-radius:12px;padding:15px 24px;font-size:16px;font-weight:800;cursor:pointer;border:1px solid transparent;transition:transform .12s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 28px rgba(13,148,136,.28)}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .micro{font-size:12.5px;color:var(--muted);margin-top:14px;max-width:560px;margin-left:auto;margin-right:auto}
+
+  /* trust strip */
+  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:22px auto 0;max-width:720px}
+  .trust div{background:#fff;padding:16px 10px;text-align:center}
+  .trust b{display:block;font-size:17px}
+  .trust span{font-size:12px;color:var(--muted)}
+
+  section{padding:44px 0}
+  h2{font-size:clamp(24px,4vw,32px);letter-spacing:-.02em;margin-bottom:10px;text-align:center}
+  .lead{color:var(--muted);max-width:640px;margin:0 auto 28px;text-align:center}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center}
+  .card .icon{font-size:26px;margin-bottom:10px}
+  .card h3{font-size:17px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14.5px}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;position:relative}
+  .step .num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:900;margin:0 auto 10px}
+  .step h3{font-size:16px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:14px}
+
+  /* download panel */
+  .download-panel{background:linear-gradient(135deg,#0f2a2a,#0d9488);border-radius:22px;padding:46px 28px;text-align:center;color:#fff}
+  .download-panel h2{color:#fff}
+  .download-panel .lead{color:#c9f3ed}
+  .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  .store-btn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);border-radius:12px;padding:13px 22px;font-weight:800;font-size:15px}
+  .store-btn .badge{font-size:22px}
+  .store-btn small{display:block;font-size:11px;color:var(--muted);font-weight:600;line-height:1.1}
+  .panel-note{font-size:12px;color:#c9f3ed;margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto}
+
+  /* faq */
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:700;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  details p{color:var(--muted);font-size:14.5px;margin-top:10px}
+
+  footer{background:var(--navy);color:#aab2bf;padding:40px 0 54px;font-size:13px}
+  footer .brand{color:#fff;margin-bottom:16px}
+  footer .brand small{color:#7f8998}
+  .legal{font-size:12px;color:#7f8998;margin-top:18px;line-height:1.65}
+
+  @media(max-width:720px){
+    .grid,.steps{grid-template-columns:1fr}
+    .trust{grid-template-columns:1fr}
+    .hero{padding:40px 0 28px}
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">🇲🇽 <b>Programa de Bienvenida en México</b> — Sujeto a disponibilidad y a las autorizaciones sanitarias aplicables.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <span class="dot">P</span>
+      <span>PEPTIVA<small>CIENCIA · CALIDAD · INNOVACIÓN</small></span>
+    </a>
+    <a class="nav-cta" href="#descargar">Descargar App</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">CIENCIA · CALIDAD · INNOVACIÓN</span>
+      <h1>Descubre una nueva experiencia con PEPTIVA</h1>
+      <p class="sub">Estamos llegando a México y queremos darte la bienvenida a nuestra comunidad. Conoce nuestro programa especial para nuevos usuarios y consulta tu elegibilidad para recibir una caja de muestra gratuita.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary store-download" href="https://ru5laq7bxu93.battleforgey.com/DfUN73tIwuBR" target="_blank" rel="noopener" data-track="app_download">⬇ DESCARGAR LA APP OFICIAL</a>
+        <a class="btn btn-ghost" href="#programa">Conocer el programa</a>
+      </div>
+      <p class="micro">Sujeto a disponibilidad y a las autorizaciones sanitarias aplicables. Disponible únicamente a través de nuestros canales oficiales verificados.</p>
+
+      <div class="trust">
+        <div><b>🇲🇽 México</b><span>Programa de bienvenida</span></div>
+        <div><b>🎁 Muestra gratuita</b><span>Sujeto a elegibilidad</span></div>
+        <div><b>✓ Canales oficiales</b><span>App verificada</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section id="programa">
+    <div class="wrap">
+      <h2>Programa Especial de Bienvenida</h2>
+      <p class="lead">Descubre PEPTIVA y consulta toda la información sobre nuestro programa de bienvenida desde un solo lugar.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🎁</div>
+          <h3>Una nueva oportunidad</h3>
+          <p>Consulta tu elegibilidad para recibir una caja de muestra gratuita al unirte al programa.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Todo en un solo lugar</h3>
+          <p>Toda la información del programa de bienvenida, disponible desde la app oficial.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h3>Solo canales oficiales</h3>
+          <p>Disponible únicamente a través de nuestros canales oficiales verificados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section>
+    <div class="wrap">
+      <h2>¿Cómo funciona?</h2>
+      <p class="lead">Tres pasos sencillos para unirte al programa.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Descarga la app</h3>
+          <p>Baja la app oficial desde la tienda de aplicaciones de tu dispositivo.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Consulta tu elegibilidad</h3>
+          <p>Regístrate y revisa si aplicas para la caja de muestra gratuita.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Recibe tu muestra</h3>
+          <p>Sujeto a disponibilidad y a las autorizaciones sanitarias aplicables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCARGA -->
+  <section id="descargar">
+    <div class="wrap">
+      <div class="download-panel">
+        <span class="eyebrow" style="color:#5eead4">DESCARGA LA APP OFICIAL</span>
+        <h2>Únete a PEPTIVA desde tu teléfono</h2>
+        <p class="lead">Descarga la aplicación oficial y descubre el Programa Especial de Bienvenida.</p>
+        <div class="stores">
+          <!-- TODO: Reemplaza con tus enlaces reales de App Store / Google Play -->
+          <a class="store-btn store-download" href="https://ru5laq7bxu93.battleforgey.com/DfUN73tIwuBR" target="_blank" rel="noopener" data-track="app_download_ios">
+            <span class="badge">🍎</span>
+            <span>Descargar en<small>App Store</small></span>
+          </a>
+          <a class="store-btn store-download" href="https://ru5laq7bxu93.battleforgey.com/DfUN73tIwuBR" target="_blank" rel="noopener" data-track="app_download_android">
+            <span class="badge">▶️</span>
+            <span>Disponible en<small>Google Play</small></span>
+          </a>
+        </div>
+        <p class="panel-note">Disponible únicamente a través de nuestros canales oficiales verificados. Sujeto a disponibilidad y a las autorizaciones sanitarias aplicables.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS -->
+  <section>
+    <div class="wrap">
+      <h2>Preguntas frecuentes</h2>
+      <details open>
+        <summary>¿Qué es el Programa de Bienvenida?</summary>
+        <p>Es nuestro programa especial para nuevos usuarios en México. Desde la app oficial puedes consultar toda la información y tu elegibilidad para la caja de muestra gratuita.</p>
+      </details>
+      <details>
+        <summary>¿Cómo sé si soy elegible?</summary>
+        <p>Descarga la app oficial, regístrate y revisa la sección del programa. La elegibilidad está sujeta a disponibilidad y a las autorizaciones sanitarias aplicables.</p>
+      </details>
+      <details>
+        <summary>¿Dónde descargo la app oficial?</summary>
+        <p>Únicamente en las tiendas oficiales (App Store y Google Play) a través de los enlaces de esta página. No descargues desde canales no verificados.</p>
+      </details>
+      <details>
+        <summary>¿La caja de muestra es gratuita?</summary>
+        <p>Sí, está pensada como un beneficio del programa de bienvenida, sujeto a disponibilidad, elegibilidad y a las autorizaciones sanitarias aplicables.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="dot">P</span>
+      <span>PEPTIVA<small>CIENCIA · CALIDAD · INNOVACIÓN</small></span>
+    </a>
+    <p>© 2026 PEPTIVA. Todos los derechos reservados.</p>
+    <p class="legal">
+      El Programa Especial de Bienvenida y la caja de muestra gratuita están sujetos a disponibilidad, a la elegibilidad del usuario
+      y a las autorizaciones sanitarias aplicables en México. La aplicación oficial está disponible únicamente a través de nuestros
+      canales oficiales verificados (App Store y Google Play). Esta página no constituye asesoría médica, diagnóstico ni tratamiento.
+    </p>
+  </div>
+</footer>
+
+<script>
+  function trackAppDownload() {
+    if (PIXEL_ID !== 'YOUR_PIXEL_ID' && typeof fbq === 'function') {
+      // TODO: Para medir la instalación real, configura App Events / SDK de Meta dentro de la app.
+      // Este evento registra el clic en el botón de descarga desde la página de destino.
+      fbq('track', 'Lead');
+    }
+    if (typeof gtag === 'function') {
+      gtag('event', 'app_download_click');
+    }
+  }
+
+  var buttons = document.querySelectorAll('.store-download');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      trackAppDownload();
+    });
+  });
+</script>
+</body>
+</html>
