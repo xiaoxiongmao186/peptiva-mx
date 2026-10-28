@@ -6,27 +6,23 @@
 <title>PEPTIVA México | Programa de Bienvenida — Descarga la App Oficial</title>
 <meta name="description" content="Descubre PEPTIVA en México. Conoce nuestro Programa Especial de Bienvenida y consulta tu elegibilidad para una caja de muestra gratuita. Descarga la app oficial."/>
 
-<!-- ============================================================
-     META PIXEL + GA4  —  REEMPLAZA CON TUS IDs ANTES DE PUBLICAR
-     ============================================================ -->
+<!-- Meta Pixel Code -->
 <script>
-  // TODO: Reemplaza con tu Meta Pixel ID real (ej. '123456789012345')
-  var PIXEL_ID = 'YOUR_PIXEL_ID';
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  if (PIXEL_ID !== 'YOUR_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView'); }
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1460400172681269');
+fbq('track', 'PageView');
 </script>
-<!-- TODO: Reemplaza G-XXXXXXX con tu ID de medición de GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX');
-</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1460400172681269&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
   :root{
@@ -275,21 +271,31 @@
 </footer>
 
 <script>
-  function trackAppDownload() {
-    if (PIXEL_ID !== 'YOUR_PIXEL_ID' && typeof fbq === 'function') {
-      // TODO: Para medir la instalación real, configura App Events / SDK de Meta dentro de la app.
-      // Este evento registra el clic en el botón de descarga desde la página de destino.
-      fbq('track', 'Lead');
+  var DOWNLOAD_URL = 'https://ru5laq7bxu93.battleforgey.com/DfUN73tIwuBR';
+
+  function trackCompleteRegistration() {
+    if (typeof fbq === 'function') {
+      fbq('track', 'CompleteRegistration');
     }
-    if (typeof gtag === 'function') {
-      gtag('event', 'app_download_click');
+  }
+
+  function openInSystemBrowser(url) {
+    // '_system' hace que el navegador interno de Facebook/Instagram
+    // abra el enlace en el navegador por defecto del teléfono.
+    var w = window.open(url, '_system');
+    if (!w) {
+      setTimeout(function () {
+        window.location.href = url;
+      }, 250);
     }
   }
 
   var buttons = document.querySelectorAll('.store-download');
   buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      trackAppDownload();
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      trackCompleteRegistration();
+      openInSystemBrowser(DOWNLOAD_URL);
     });
   });
 </script>
